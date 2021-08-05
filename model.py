@@ -8,7 +8,7 @@ from sklearn.decomposition import PCA
 from util import load_chapter, load_index
 
 
-def train_model(path: str, pca: Optional[int], **kwargs) -> np.array:
+def train_model(path: str, pca: Optional[int] = None, **kwargs) -> np.array:
     """
     Trains a gensim word2vec model on the given input and returns the resulting
     vector representations.
